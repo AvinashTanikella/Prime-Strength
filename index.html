@@ -72,7 +72,71 @@
             font-weight: bold;
             text-align: center;
         }
+        .founder-info {
+            text-align: center;
+            margin-top: 10px;
+        }
     </style>
+    <script>
+        function updateLinks() {
+            var month = document.getElementById('monthSelector').value;
+            var salesLink1 = document.getElementById('salesLink1');
+            var salesLink2 = document.getElementById('salesLink2');
+            var attendanceLink = document.getElementById('attendanceLink');
+
+            if (month === 'January') {
+                salesLink1.href = 'https://docs.google.com/spreadsheets/d/18Enk5ilt0qW8fom_PQIEE7aePWX-erxp/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true';
+                salesLink2.href = 'https://docs.google.com/spreadsheets/d/14W73oh7xcPRcujp69CRm8IXOHM_LuJxY/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true';
+                attendanceLink.href = 'https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j';
+            } else if (month === 'February') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'March') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'April') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'May') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'June') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'July') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'August') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'September') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'October') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'November') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            } else if (month === 'December') {
+                salesLink1.href = 'LINK_FOR_JULY_SALES1';
+                salesLink2.href = 'LINK_FOR_JULY_SALES2';
+                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
+            }
+            // Add more else if conditions for other months as needed
+        }
+        window.onload = updateLinks;
+    </script>    
 </head>
 <body>
     <img src="./images/logo-text.png" alt="Prime Strength Logo" style="width: 130px; height: 130px; display: block; margin: 0 auto;" />
@@ -104,9 +168,21 @@
         <a id="salesLink2" href="https://docs.google.com/spreadsheets/d/14W73oh7xcPRcujp69CRm8IXOHM_LuJxY/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true" target="_blank">SALES - Offline Pack  & Day Pass</a>
     </div>
     <hr />
+    <h4>STOCK MANAGEMENT </h4>
+    <div class="button-container">
+        <a id="WatercanLink" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Water Cans</a>
+        <a id="SnacksLink" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Snacks Sales</a>
+    </div>
+    <hr />
+    <h4>ACCOUNTING </h4>
+    <div class="button-container">
+        <a id="salesLink2" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Expense List</a>
+        <a id="salesLink2" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Monthly Statement</a>
+    </div>
+    <hr />
     <h4>PACKS & PLANS </h4>
     <div class="button-container">
-        <a href="https://docs.google.com/spreadsheets/d/18Enk5ilt0qW8fom_PQIEE7aePWX-erxp/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true" target="_blank">Pack Details (At Center)</a>
+        <a href="https://docs.google.com/spreadsheets/d/18Enk5ilt0qW8fom_PQIEE7aePWX-erxp/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true" target="_blank">Pack Details (Offline Sales) & Day Pass</a>
         <a href="https://docs.google.com/spreadsheets/d/14W73oh7xcPRcujp69CRm8IXOHM_LuJxY/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true" target="_blank">Schedule of Activities</a>
     </div>
     <hr />
@@ -119,12 +195,6 @@
         <a id="SalaryslipLink" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Salary Slips</a>
     </div>
     <hr />
-    <h4>STOCK MANAGEMENT </h4>
-    <div class="button-container">
-        <a id="WatercanLink" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Water Cans</a>
-        <a id="SnacksLink" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Snacks Sales</a>
-    </div>
-    <hr />
     <h4>TRAINERS AVAILIBILITY </h4>
     <div class="button-container">
         <a id="salesLink1" href="https://docs.google.com/spreadsheets/d/18Enk5ilt0qW8fom_PQIEE7aePWX-erxp/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true" target="_blank">Schedule & Shifts</a>
@@ -133,8 +203,8 @@
     <hr />
     <h4>CUSTOMER COMPLAINT FORM </h4>
     <div class="button-container">
-        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">New Complaint</a>
-        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Issues Status</a>
+        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Register New Complaint</a>
+        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Status of Existing Issues</a>
     </div>
     <hr />
     <h4>DIGITAL MARKETING & SALES </h4>
@@ -146,17 +216,6 @@
     <h4>SURVEYS </h4>
     <div class="button-container">
         <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Survey - Gym</a>
-        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Survey - Boxing</a>
-        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Survey - Dance Fitness</a>
-        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Survey - Powerlifting</a>
-        <a href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Survey - Yoga & Aerial Yoga</a>
-
-    </div>
-    <hr />
-    <h4>ACCOUNTING </h4>
-    <div class="button-container">
-        <a id="salesLink2" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Expense List</a>
-        <a id="salesLink2" href="https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j" target="_blank">Monthly Statement</a>
     </div>
     <hr />
     <h4>INVESTOR'S CORNER </h4>
@@ -173,38 +232,40 @@
         <div class="gallery-items">
             <div class="gallery-item">
                 <img src="./images/avi.jpg" alt="Founder 1">
+                <div class="founder-info">
+                    <h3>Avinash Tanikella</h3>
+                    <p>Partner</p>
+                    <p>Managing, Strategic and Digital</p>
+                </div>
             </div>
             <div class="gallery-item">
                 <img src="./images/Saklesh.jpeg" alt="Founder 2">
+                <div class="founder-info">
+                    <h3>Saklesh Bidri</h3>
+                    <p>Partner</p>
+                    <p>Managing, Strategic and Digital</p>
+                </div>
             </div>
             <div class="gallery-item">
                 <img src="./images/Siraj.jpeg" alt="Founder 3">
+                <div class="founder-info">
+                    <h3>Siraj Dudekula</h3>
+                    <p>Partner</p>
+                    <p>Working, Finance & Human Resouce</p>
+                </div>
             </div>
             <div class="gallery-item">
                 <img src="./images/Yash.jpeg" alt="Founder 4">
+                <div class="founder-info">
+                    <h3>Yashwanth Majeti</h3>
+                    <p>Partner</p>
+                    <p>Managing, Strategic and Digital</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <script>
-        function updateLinks() {
-            var month = document.getElementById('monthSelector').value;
-            var salesLink1 = document.getElementById('salesLink1');
-            var salesLink2 = document.getElementById('salesLink2');
-            var attendanceLink = document.getElementById('attendanceLink');
 
-            if (month === 'june') {
-                salesLink1.href = 'https://docs.google.com/spreadsheets/d/18Enk5ilt0qW8fom_PQIEE7aePWX-erxp/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true';
-                salesLink2.href = 'https://docs.google.com/spreadsheets/d/14W73oh7xcPRcujp69CRm8IXOHM_LuJxY/edit?usp=sharing&ouid=115886972838769464159&rtpof=true&sd=true';
-                attendanceLink.href = 'https://drive.google.com/drive/folders/1mW9raD4s_gpXQ8RleVntIcaay0kh_x5j';
-            } else if (month === 'july') {
-                salesLink1.href = 'LINK_FOR_JULY_SALES1';
-                salesLink2.href = 'LINK_FOR_JULY_SALES2';
-                attendanceLink.href = 'LINK_FOR_JULY_ATTENDANCE';
-            }
-            // Add more else if conditions for other months as needed
-        }
-        window.onload = updateLinks;
-    </script>
+
 </body>
 </html>
